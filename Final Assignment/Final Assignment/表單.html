@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/form.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <h2 style="color: rgb(0, 0, 0); text-align:center;">盡一份心力</h2>
+        <form name="form1" method="Post" action="1092009/form.php">
+            <table>
+                <tr>
+                    <td>姓名</td>
+                    <td><input type="text" name="UserName" id="UserName" size="30" placeholder="輸入您的大名"></td>
+                </tr>
+                <tr>
+                    <td>性別</td>
+                    <td>
+                        <input type="radio" name="gender" value="1" >男
+                        <input type="radio" name="gender" value="1" >女
+                        <input type="radio" name="gender" value="1" >其他
+                    </td>
+                </tr>
+                <tr>
+                    <td>年齡</td>
+                    <td>
+                        <input type="radio" name="age" value="1" >18歲以下
+                        <input type="radio" name="age" value="1" >18~40歲
+                        <input type="radio" name="age" value="1" >41~60歲
+                        <input type="radio" name="age" value="1" >60歲以上
+                    </td>
+                    <tr>
+                        <td>是否願意參與相關保育活動</td>
+                        <td><select name="UserClassStyle02[]" required>
+                            <option value="">請選擇</option>
+                            <option value="是">是</option>
+                            <option value="否">否</option>
+                            <option value="再考慮">再考慮</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>聯絡資訊</td>
+                    <td>上題若選是，請幫我填入下方聯絡資料，否則不需要填</td>
+                </tr>
+                </tr>
+                    <td>聯絡手機</td>
+                    <td><input type="tel" name="UserTel" placeholder="09xxxxxxxx"></td>
+                </tr>
+                <tr>
+                    <td>聯絡E-mail</td>
+                    <td><input type="email" name="UserMail" size="50" placeholder="username@mailserver"></td>
+                </tr>
+                <tr>
+                    <td>網站最喜歡的地方</td>
+                    <td><input type="checkbox" name="UserCourses[]" >前導頁
+                        <input type="checkbox" name="UserCourses[]" >首頁
+                        <input type="checkbox" name="UserCourses[]" >介紹動物
+                        <input type="checkbox" name="UserCourses[]" >都喜歡
+                        <input type="checkbox" name="UserCourses[]" >其他<input type="text" name="other" id="other" size="10">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>對於網站你有什麼意見</td>
+                    <td>
+                        <textarea cols=60 rows=8 name=textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="提交" onclick="myFunction()">
+                    <input type="reset" value="重新輸入">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<script>
+    function myFunction() {
+      alert("感謝您的意見回饋");
+    }
+</script>
+
+</body>
+</html>

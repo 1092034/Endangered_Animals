@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/top_style.css">
+    <link rel="stylesheet" href="css/slides_style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="img/logo.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>瀕臨滅絕的最後身影</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        #container {
+          margin: 0 auto;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            margin-bottom: -50px;
+        }
+        .content{
+            padding-bottom: 50px;
+        }
+        .footer{
+            height: 70px;
+            background-color: #2646e7;
+        }
+        p{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            word-spacing: 1em;
+            font-weight: bold;
+        }
+        h{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            word-spacing: 1em;
+            font-weight: bold;
+        }
+        h1 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        text-transform: capitalize;
+        }
+
+        .service-box {
+          position: relative;
+          overflow: hidden;
+          margin-bottom: 10px;
+          perspective: 1000px;
+          -webkit-perspective: 1000px;
+        }
+
+        .service-icon {
+          width: 100%;
+          height: 220px;
+          padding: 20px;
+          text-align: center;
+          transition: all .5s ease;
+        }
+
+        .service-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          opacity: 0;
+          width: 100%;
+          height: 220px;
+          padding: 20px;
+          text-align: center;
+          transition: all .5s ease;
+          background-color: #b7ceeb;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          -webkit-transform: translateY(110px) rotateX(-90deg);
+          -moz-transform: translateY(110px) rotateX(-90deg);
+          -ms-transform: translateY(110px) rotateX(-90deg);
+          -o-transform: translateY(110px) rotateX(-90deg);
+          transform: translateY(110px) rotateX(-90deg);
+        }
+
+        .service-box .service-icon .front-content {
+          position: relative;
+          top: 80px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        .service-box .service-icon .front-content i {
+          font-size: 28px;
+          color: rgb(0, 0, 0);
+          font-weight: normal;
+        }
+
+        .service-box .service-icon .front-content h3 {
+          font-size: 15px;
+          color: #fff;
+          text-align: center;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+        }
+
+        .service-box .service-content h3 {
+          font-size: 15px;
+          font-weight: 700;
+          color: rgb(5, 0, 81);
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+
+        .service-box .service-content p {
+          font-size: 13px;
+          color: #000000;
+          margin: 0;
+        }
+
+        .yellow {
+          background-color: #587fd4;
+        }
+
+        .orange {
+          background-color: #4c67bd;
+        }
+
+        .red {
+          background-color: #2f45a7;
+        }
+
+        .grey {
+          background-color: #243397;
+        }
+
+        .service-box:hover .service-icon {
+          opacity: 0;
+          -webkit-transform: translateY(-110px) rotateX(90deg);
+          -moz-transform: translateY(-110px) rotateX(90deg);
+          -ms-transform: translateY(-110px) rotateX(90deg);
+          -o-transform: translateY(-110px) rotateX(90deg);
+          transform: translateY(-110px) rotateX(90deg);
+        }
+
+        .service-box:hover .service-content {
+          opacity: 1;
+          -webkit-transform: rotateX(0);
+          -moz-transform: rotateX(0);
+          -ms-transform: rotateX(0);
+          -o-transform: rotateX(0);
+          transform: rotateX(0);
+        }
+    </style>
+        
+
+</head>
+<body>
+    <header>
+        <img src="img/頂圖5.jpg" alt="...">
+      </header>
+      <div class="wrapper">
+        <div class="content">
+        <div class="container">
+            <div class="top" title="導覽列" >
+                <div class="width">
+                    <div class="logo"></div>
+                    <div class="nav">
+                        <ul class="drop-down-menu">
+                            <li><a href="index.html" title="網站簡介">網站簡介</a></li>
+                            <li><a href="#U" title="動物介紹">海洋動物</a>
+                                <ul>
+                                    <li>
+                                      <a href="分類/哺乳類/哺乳.html" title="哺乳類">哺乳類</a>
+                                    </li>
+                                    <li>
+                                      <a href="分類/鳥類/鳥類.html" title="鳥類">鳥類</a>
+                                    </li>
+                                    <li>
+                                      <a href="分類/爬蟲類/爬蟲.html" title="爬蟲類">爬蟲類</a>
+                                    </li> 
+                                    <li>
+                                      <a href="分類/魚類/魚類.html" title="魚類">魚類</a>
+                                    </li>
+                                    
+                                </ul> 
+                            </li>
+                            <li><a href="相關條約.html" title="動物介紹">相關條約</a></li> 
+                            <li><a href="表單.html" title="表單" target="_black">意見回饋</a></li>
+                            <li><a href="時事新聞.html" title="時事新聞" >時事新聞</a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+                <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <div class="container">
+    <h1>相關條約</h1>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 ">
+        <div class="service-box">
+          <div class="service-icon yellow">
+            <div class="front-content">
+              <h3>聯合國海洋法公約<br />〈UNCLOS〉</h3>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>聯合國海洋法公約</h3>
+            <p>指聯合國曾召開的三次海洋法會議，以及1982年第三次會議所決議的海洋法公約（LOS）。由於英語中的「Convention」同指「會議」與「公約」…
+                <br />
+                <button type="button" class="btn btn-link"><a href="https://zh.wikipedia.org/wiki/%E8%81%AF%E5%90%88%E5%9C%8B%E6%B5%B7%E6%B4%8B%E6%B3%95%E5%85%AC%E7%B4%84" target="_blank">More</a></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 ">
+        <div class="service-box">
+          <div class="service-icon orange">
+            <div class="front-content">
+              <h3>國際防止船舶污染公約<br />(MARPOL）</h3>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>國際防止船舶污染公約</h3>
+            <p>現稱「關於1973年防止船舶汙染國際公約之1978年議定書」，是國際海事組織針對海上船舶因例行作業產生之故意性油類物質汙染行為…
+                <br />
+                <button type="button" class="btn btn-link"><a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E6%AD%A2%E8%88%B9%E8%88%B6%E6%B1%99%E6%9F%93%E5%9C%8B%E9%9A%9B%E5%85%AC%E7%B4%84" target="_blank">More</a></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-box ">
+          <div class="service-icon red">
+            <div class="front-content">
+              <h3>生物多樣性公約<br />(CBD)</h3>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>生物多樣性公約</h3>
+            <p>目的是訂立一套國際性戰略，使生物多樣性得以保護和可持續發展。生物多樣性公約是一項具有國際法律約束力的條約…
+                <br />
+                <button type="button" class="btn btn-link"><a href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A8%A3%E6%80%A7%E5%85%AC%E7%B4%84" target="_blank">More</a></button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon grey">
+            <div class="front-content">
+              <h3>瀕臨絕種野生動植物國際貿易公約<br />(CITES）</h3>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>瀕臨絕種野生動植物國際貿易公約</h3>
+            <p>是一個在1963年時由「國際自然與天然資源保育聯盟」（現名「國際自然保護聯盟」，縮寫IUCN）的各會員國政府所起草簽署，在1975年時正式執行的一份國際協約…
+                <br />
+                <button type="button" class="btn btn-link"><a href="https://zh.wikipedia.org/wiki/%E7%80%95%E5%8D%B1%E9%87%8E%E7%94%9F%E5%8B%95%E6%A4%8D%E7%89%A9%E7%A8%AE%E5%9C%8B%E9%9A%9B%E8%B2%BF%E6%98%93%E5%85%AC%E7%B4%84" target="_blank">More</a></button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+            </div>
+            </div>
+            </div>
+</body>
+</html>

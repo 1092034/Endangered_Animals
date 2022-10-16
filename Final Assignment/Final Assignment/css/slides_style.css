@@ -1,0 +1,12 @@
+ 
+.carousel{
+    object-fit: cover;
+    overflow: hidden;
+}
+.slideshow img{
+    
+    height: 500px;
+    margin: auto;
+}
+
+

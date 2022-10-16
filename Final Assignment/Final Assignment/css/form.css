@@ -1,0 +1,20 @@
+tr{
+    border: 1px solid gray;
+}
+.inputTable table, td{
+    border: 1px solid gray;
+}
+.form{
+    width: 40%; 
+    position: absolute; 
+    top: 10%;
+    left: 28%;
+    border: 3px gray solid;
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: rgba(182, 210, 236, 0.959);
+
+}

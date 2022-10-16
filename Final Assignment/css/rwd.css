@@ -1,0 +1,13 @@
+.rwd{
+    font-size: large;
+}
+@media (min-width:600px) and (max-width:1200px){
+    .rwd{
+        font-size: x-large;
+    }
+}
+@media (min-width:1200px) {
+    .rwd{
+        font-size: xx-large;
+    }
+}

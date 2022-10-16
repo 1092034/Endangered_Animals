@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zn-Hamt-TW">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>首頁</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            background-size:cover;
+            
+        }
+        .picture
+        {
+            margin: 0px;
+            padding: 0px;
+            position: relative; /*相對定位*/
+            width: 100%;
+            
+        }
+        .content{
+            position: absolute; /*絕對定位*/
+            z-index: 1;
+            width: 70%;
+            top: 10%;
+            left: 16%;
+
+        }
+        .content-text{
+            padding-top: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 80px;
+            background:rgba(85, 170, 204, 0.329);
+            width: 100%;
+            height: 100%;
+            color:white;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 40px;
+            font-family: DFKai-sb;
+        }
+        audio{
+            float: left;
+            position: absolute;
+            bottom: 10px;
+            color: rgba(85, 170, 204, 0.329);
+        }
+        .pic-button
+        {
+            float: right;
+            position: absolute; /*絕對定位*/
+            right: 20px;
+            bottom: 20px;
+            width:120px;
+            height:40px;
+            font-size:20px;
+            padding:0px;
+            border-radius: 4px;
+        }
+        .container{
+            /* margin: 0; */
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="picture">
+            <video width="100%" height="100%" autoplay loop muted>  
+                <source src="img/video.mp4" type="video/mp4"> 
+            </video>
+            <div class="content">
+                <div class="content-text">
+                    COVID-19 ，近年內影響人類日常生活的病毒，累計至目前為止，1.72億的病例數，369萬人因此失去了生命，若是病毒還接續著進化，人類會不會也變成瀕臨絕種的生物？
+                    若是如此，人類還能有足夠的智慧去拯救同類的生命，但其他動物呢？只能靠人類去保育，反而有些物種還是因人類破壞環境，工廠排放廢水、製造無法分解的垃圾使其聚集於海洋而瀕臨滅絕，
+                    就算如此種種不可逆之破壞已然造成，至少也要知道這世界上曾經有著這麼一種特別的存在，每個物種都有特殊的地方，就讓我們來介紹及保存他們在這世界上的模樣吧。
+                    <br>
+                    <audio controls>
+                        <source src="mp3/kuromaku no kage.mp3" type="audio/mpeg">
+                    </audio>
+                    <input type="button" value="進入主頁" class="pic-button" onclick="location.href='home.html'"> 
+                </div>
+                
+            </div>          
+        </div>
+        
+    </div>
+</body>
+</html>
